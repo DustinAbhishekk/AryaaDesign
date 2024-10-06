@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryaadesign | Art by [Your Name]</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <div class="container">
+        <h1><a href="#">Aryaadesign</a></h1>
+        <nav>
+          <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#design-inspirations">Design Inspirations</a></li>
+            <li><a href="#collections">Special Collections</a></li>
+            <li><a href="#contact" class="contact-btn">Contact us</a></li>
+            <!-- Added class here -->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="carousel">
+        <div class="carousel-images">
+          <div class="carousel-item active">
+            <img src="/img/Imperial Eagle.jpg" alt="Painting 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/Malefor.jpg" alt="Painting 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="/img/71k61pmm5kd81.jpg" alt="Painting 3" />
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+      <div class="hero-content">
+        <h2>Discover the Beauty of Art</h2>
+        <p>Original and timeless paintings that tell a story.</p>
+        <a href="#gallery" class="btn hero-btn">Explore Arts</a>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2>Featured Paintings</h2>
+        <div class="gallery-carousel">
+          <div class="gallery-track">
+            <!-- First Row of Paintings -->
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/57/painting-5320137_1280.jpg"
+                alt="Painting 1"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Abstract Expression</h3>
+                <div class="price-container">
+                  <p class="original-price">₹22,500</p>
+                  <p class="discounted-price">₹21,375</p>
+                  <span class="discount-badge">5% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2021/05/28/15/01/painting-6289823_1280.jpg"
+                alt="Painting 2"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Sunset Reflections</h3>
+                <div class="price-container">
+                  <p class="original-price">₹27,500</p>
+                  <p class="discounted-price">₹24,750</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/04/15/09/10/painting-5044148_1280.jpg"
+                alt="Painting 3"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Floral Delights</h3>
+                <div class="price-container">
+                  <p class="original-price">₹20,500</p>
+                  <p class="discounted-price">₹17,835</p>
+                  <span class="discount-badge">13% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/09/07/abstract-1869363_1280.jpg"
+                alt="Painting 4"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Modern Art</h3>
+                <div class="price-container">
+                  <p class="original-price">₹18,000</p>
+                  <p class="discounted-price">₹16,200</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320138_1280.jpg"
+                alt="Painting 5"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Nature's Palette</h3>
+                <div class="price-container">
+                  <p class="original-price">₹23,500</p>
+                  <p class="discounted-price">₹21,150</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/59/painting-5320139_1280.jpg"
+                alt="Painting 6"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Coastal Serenity</h3>
+                <div class="price-container">
+                  <p class="original-price">₹19,000</p>
+                  <p class="discounted-price">₹17,100</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+
+            <!-- Second Row of Paintings -->
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/57/painting-5320140_1280.jpg"
+                alt="Painting 7"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Whimsical Dreams</h3>
+                <div class="price-container">
+                  <p class="original-price">₹15,000</p>
+                  <p class="discounted-price">₹13,500</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/57/painting-5320141_1280.jpg"
+                alt="Painting 8"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Starry Night</h3>
+                <div class="price-container">
+                  <p class="original-price">₹30,000</p>
+                  <p class="discounted-price">₹27,000</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/57/painting-5320142_1280.jpg"
+                alt="Painting 9"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Urban Landscape</h3>
+                <div class="price-container">
+                  <p class="original-price">₹28,500</p>
+                  <p class="discounted-price">₹24,750</p>
+                  <span class="discount-badge">13% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320143_1280.jpg"
+                alt="Painting 10"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Still Life</h3>
+                <div class="price-container">
+                  <p class="original-price">₹20,000</p>
+                  <p class="discounted-price">₹18,000</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320144_1280.jpg"
+                alt="Painting 11"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Abstract Landscape</h3>
+                <div class="price-container">
+                  <p class="original-price">₹26,000</p>
+                  <p class="discounted-price">₹23,400</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320145_1280.jpg"
+                alt="Painting 12"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Colorful Bouquet</h3>
+                <div class="price-container">
+                  <p class="original-price">₹21,500</p>
+                  <p class="discounted-price">₹19,350</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320146_1280.jpg"
+                alt="Painting 13"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Golden Fields</h3>
+                <div class="price-container">
+                  <p class="original-price">₹24,000</p>
+                  <p class="discounted-price">₹21,600</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="https://cdn.pixabay.com/photo/2020/06/20/15/58/painting-5320147_1280.jpg"
+                alt="Painting 14"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <div class="gallery-info">
+                <h3>Mountain Peaks</h3>
+                <div class="price-container">
+                  <p class="original-price">₹29,000</p>
+                  <p class="discounted-price">₹26,100</p>
+                  <span class="discount-badge">10% Off</span>
+                </div>
+                <a href="#contact" class="btn contact-btn">Contact to Buy</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-arrows">
+            <button class="arrow left-arrow" onclick="moveSlide(-1)">
+              &#10094;
+              <!-- Left Arrow -->
+            </button>
+            <button class="arrow right-arrow" onclick="moveSlide(1)">
+              &#10095;
+              <!-- Right Arrow -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-aryaadesign" class="about-aryaadesign">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/09/30/10/36/artist-1700317_1280.jpg"
+              alt="About Aryaadesign"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+          </div>
+          <div class="about-text">
+            <h2>About Aryaadesign</h2>
+            <p>
+              Aryaadesign is a vibrant art platform that showcases the
+              creativity and passion of its founder. With a unique perspective
+              on color and form, Aryaadesign aims to bring beauty and
+              inspiration to every home and space. Our artwork is not just a
+              visual treat; it's a reflection of emotions and stories that
+              resonate with every viewer.
+            </p>
+            <p>
+              At Aryaadesign, we believe that art should be accessible to
+              everyone. We offer a diverse range of paintings that cater to
+              various tastes and styles. Our mission is to create an inviting
+              space where art lovers can explore, appreciate, and acquire unique
+              pieces that speak to them.
+            </p>
+            <p>
+              Join us on this artistic journey and discover the magic of art
+              with Aryaadesign!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Inspirations Section -->
+
+    <section id="design-inspirations" class="design-inspirations">
+      <div class="container">
+        <h2>Design Inspirations</h2>
+        <div class="inspiration-carousel">
+          <button class="carousel-nav prev" aria-label="Previous Slide">
+            &#10094;
+          </button>
+          <div class="inspiration-track">
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/07/28/22/02/art-865056_1280.jpg"
+                alt="Inspiration 1"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Color Burst</h3>
+              <p>
+                An abstract explosion of colors that ignites the imagination.
+              </p>
+            </div>
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2015/06/01/04/07/oil-painting-792015_1280.jpg"
+                alt="Inspiration 2"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Brush Strokes of Life</h3>
+              <p>
+                Vibrant, free-flowing brush strokes that capture creativity.
+              </p>
+            </div>
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/10/24/17/54/canvas-988261_1280.jpg"
+                alt="Inspiration 3"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Nature's Palette</h3>
+              <p>Capturing the beauty of nature through vibrant colors.</p>
+            </div>
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/11/29/02/56/abstraction-1867947_1280.jpg"
+                alt="Inspiration 4"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Dreamy Landscapes</h3>
+              <p>A surreal take on serene landscapes and their beauty.</p>
+            </div>
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/01/27/07/26/abstract-1160911_1280.jpg"
+                alt="Inspiration 5"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Geometric Harmony</h3>
+              <p>Exploring the balance of shapes and colors in art.</p>
+            </div>
+            <div class="inspiration-card">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/06/30/08/36/canvas-2458597_1280.jpg"
+                alt="Inspiration 6"
+                onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+              />
+              <h3>Reflections of Light</h3>
+              <p>The interplay of light and color in a stunning display.</p>
+            </div>
+            <!-- Add more cards as needed -->
+          </div>
+          <button class="carousel-nav next" aria-label="Next Slide">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Collections Section -->
+    <section id="special-collections" class="special-collections">
+      <div class="container">
+        <h2>Special Collections</h2>
+
+        <div class="collection-description">
+          <p>
+            Discover our exclusive special collections, where each piece of art
+            is carefully curated to inspire, evoke emotions, and showcase
+            unparalleled creativity. Let Aryaadesign transport you into a world
+            of vivid color, bold strokes, and timeless beauty.
+          </p>
+          <a href="#contact" class="btn contact-btns"
+            >Contact for Special Collections</a
+          >
+        </div>
+
+        <div class="collections-display">
+          <div class="collection-item large-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/11/29/02/56/abstraction-1867947_1280.jpg"
+              alt="Collection 1"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Whimsical Wonders</h3>
+              <p>
+                A collection of playful and imaginative pieces that spark joy.
+              </p>
+            </div>
+          </div>
+          <div class="collection-item small-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/06/30/08/36/canvas-2458597_1280.jpg"
+              alt="Collection 2"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Serenity in Nature</h3>
+              <p>Artworks inspired by the beauty and tranquility of nature.</p>
+            </div>
+          </div>
+          <div class="collection-item small-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/10/24/17/54/canvas-988261_1280.jpg"
+              alt="Collection 3"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Abstract Expressions</h3>
+              <p>
+                A captivating collection of abstract art that evokes emotion.
+              </p>
+            </div>
+          </div>
+          <div class="collection-item large-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2016/01/27/07/26/abstract-1160911_1280.jpg"
+              alt="Collection 4"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Cultural Heritage</h3>
+              <p>
+                Art reflecting the rich traditions and cultures from around the
+                world.
+              </p>
+            </div>
+          </div>
+          <div class="collection-item small-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/07/28/22/02/art-865056_1280.jpg"
+              alt="Collection 5"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Modern Minimalism</h3>
+              <p>
+                Showcasing simplicity and elegance through minimalist design.
+              </p>
+            </div>
+          </div>
+          <div class="collection-item small-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2015/08/03/00/34/canvas-838436_1280.jpg"
+              alt="Collection 6"
+              onerror="this.src='https://via.placeholder.com/400x400?text=Image+Unavailable'"
+            />
+            <div class="item-info">
+              <h3>Geometric Dreams</h3>
+              <p>
+                Art that plays with shapes and forms, creating a dreamlike
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-form">
+      <div class="container">
+        <h2>Get in Touch with Aryaadesign</h2>
+        <p class="intro-text">
+          Let us know your preferences for buying a painting or custom artwork!
+        </p>
+        <form action="#" method="POST" class="creative-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="painting"
+              >Which painting or art piece are you interested in?</label
+            >
+            <select id="painting" name="painting" required>
+              <option value="">Select a painting</option>
+              <option value="Abstract Expression">Abstract Expression</option>
+              <option value="Sunset Reflections">Sunset Reflections</option>
+              <option value="Floral Delights">Floral Delights</option>
+              <option value="Custom Artwork">Custom Artwork</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Additional Requests or Questions</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Any other requests or questions?"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="budget">What's your budget for this art?</label>
+            <input
+              type="number"
+              id="budget"
+              name="budget"
+              placeholder="Enter your budget"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="deadline"
+              >When would you like to receive the artwork?</label
+            >
+            <input type="date" id="deadline" name="deadline" required />
+          </div>
+          <button type="submit" class="creative-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h3>Aryaadesign</h3>
+            <p>
+              Your one-stop destination for unique and custom paintings. Explore
+              our collection and find the perfect piece for your space!
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#">Web Design by @dustin_abhishek</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@aryaadesign.com">info@aryaadesign.com</a>
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+1234567890">+1 234 567 890</a>
+            </p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>
+                <a href="https://www.facebook.com" target="_blank"
+                  ><i class="fab fa-facebook-f"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com" target="_blank"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.twitter.com" target="_blank"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a href="https://www.linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-policies">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Do Not Sell My Personal Information</a></li>
+            </ul>
+          </div>
+          <p>&copy; 2024 Aryaadesign. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
